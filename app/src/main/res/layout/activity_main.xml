@@ -4,13 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/compass"
         android:layout_width="150dp"
         android:layout_height="147dp"
-        app:srcCompat="@android:drawable/ic_menu_compass"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="292dp" />
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="98dp"
+        android:src="@drawable/compass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="51dp"
+        android:text="Heading:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
